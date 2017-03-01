@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8A79524E1E64BB030008BFE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79524D1E64BB030008BFE8 /* AppDelegate.swift */; };
-		8A7952501E64BB030008BFE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79524F1E64BB030008BFE8 /* ViewController.swift */; };
 		8A7952531E64BB030008BFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7952511E64BB030008BFE8 /* Main.storyboard */; };
 		8A7952551E64BB030008BFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7952541E64BB030008BFE8 /* Assets.xcassets */; };
 		8A7952581E64BB030008BFE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7952561E64BB030008BFE8 /* LaunchScreen.storyboard */; };
+		8A79526C1E66B08D0008BFE8 /* ConfiguratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79526B1E66B08D0008BFE8 /* ConfiguratorViewController.swift */; };
+		8A79526E1E66B0A80008BFE8 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79526D1E66B0A80008BFE8 /* Configurator.swift */; };
+		8A7952701E66B0C10008BFE8 /* ConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A79526F1E66B0C10008BFE8 /* ConfiguratorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A79524A1E64BB030008BFE8 /* Program1Lesson1KrestininAV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Program1Lesson1KrestininAV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A79524D1E64BB030008BFE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A79524F1E64BB030008BFE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A7952521E64BB030008BFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A7952541E64BB030008BFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A7952571E64BB030008BFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A7952591E64BB030008BFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A79526B1E66B08D0008BFE8 /* ConfiguratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfiguratorViewController.swift; path = ../ConfiguratorViewController.swift; sourceTree = "<group>"; };
+		8A79526D1E66B0A80008BFE8 /* Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configurator.swift; path = ../Configurator.swift; sourceTree = "<group>"; };
+		8A79526F1E66B0C10008BFE8 /* ConfiguratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfiguratorView.swift; path = ../ConfiguratorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		8A79524C1E64BB030008BFE8 /* Program1Lesson1KrestininAV */ = {
 			isa = PBXGroup;
 			children = (
+				8A7952711E66B0D30008BFE8 /* Configurator */,
 				8A79524D1E64BB030008BFE8 /* AppDelegate.swift */,
-				8A79524F1E64BB030008BFE8 /* ViewController.swift */,
 				8A7952511E64BB030008BFE8 /* Main.storyboard */,
 				8A7952541E64BB030008BFE8 /* Assets.xcassets */,
 				8A7952561E64BB030008BFE8 /* LaunchScreen.storyboard */,
 				8A7952591E64BB030008BFE8 /* Info.plist */,
 			);
 			path = Program1Lesson1KrestininAV;
+			sourceTree = "<group>";
+		};
+		8A7952711E66B0D30008BFE8 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				8A79526D1E66B0A80008BFE8 /* Configurator.swift */,
+				8A79526F1E66B0C10008BFE8 /* ConfiguratorView.swift */,
+				8A79526B1E66B08D0008BFE8 /* ConfiguratorViewController.swift */,
+			);
+			name = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 				TargetAttributes = {
 					8A7952491E64BB030008BFE8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B553CN2745;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A7952501E64BB030008BFE8 /* ViewController.swift in Sources */,
+				8A79526C1E66B08D0008BFE8 /* ConfiguratorViewController.swift in Sources */,
+				8A79526E1E66B0A80008BFE8 /* Configurator.swift in Sources */,
 				8A79524E1E64BB030008BFE8 /* AppDelegate.swift in Sources */,
+				8A7952701E66B0C10008BFE8 /* ConfiguratorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B553CN2745;
 				INFOPLIST_FILE = Program1Lesson1KrestininAV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.Program1Lesson1KrestininAV;
@@ -272,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B553CN2745;
 				INFOPLIST_FILE = Program1Lesson1KrestininAV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = home.Program1Lesson1KrestininAV;
@@ -299,6 +318,7 @@
 				8A79525E1E64BB030008BFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
